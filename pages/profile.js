@@ -72,6 +72,8 @@ export default function Profile() {
               </Button>
             </div>
           </div>
+          <h2 className="text-xl font-semibold text-center">Version 1.2</h2>
+          <h2 className="text-sm font-semibold text-center">Build: 02-04-23</h2>
         </>
       )}
     </Layout>
