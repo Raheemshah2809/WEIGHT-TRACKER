@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="sticky top-0 z-10 flex w-full bg-white/30 p-2 backdrop-blur-lg">
       <h2 className="px-2 font-bold">
-        {router.asPath === '/' ? 'Weights' : title.join('')}
+        {router.asPath === '/' ? 'Your Weights' : title.join('')}
       </h2>
     </div>
   )

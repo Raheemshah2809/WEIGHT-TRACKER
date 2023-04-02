@@ -46,7 +46,7 @@ export default function Profile() {
               <div className="">
                 <h2 className="text-2xl">Hi, {user?.name}</h2>
                 <span className="text-xs text-slate-400">
-                  Joined{' '}
+                  Member Since :{' '}
                   <Moment format="MMM DD yyyy">
                     {user.createdAt.toDate()}
                   </Moment>
@@ -72,7 +72,7 @@ export default function Profile() {
               </Button>
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center">Version 1.2</h2>
+          <h2 className="text-xl font-semibold text-center">Version 1.3</h2>
           <h2 className="text-sm font-semibold text-center">Build: 02-04-23</h2>
         </>
       )}
