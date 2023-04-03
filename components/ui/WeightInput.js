@@ -1,5 +1,5 @@
 import {
-  ArrowLeftIcon,
+ArrowLeftIcon,
   MinusSmIcon,
   PlusSmIcon,
   XIcon,
@@ -215,6 +215,7 @@ const WeightInput = () => {
         >
           {isEdit ? 'Edit' : 'Submit'}
         </button>
+
       </div>
     </div>
   )

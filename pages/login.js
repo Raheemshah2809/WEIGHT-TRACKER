@@ -50,6 +50,9 @@ const Login = () => {
   return (
     <div className="flex min-h-screen w-full items-center justify-center">
       <div className="mx-auto w-80 overflow-hidden rounded-3xl bg-white shadow-xl">
+      <h1 className="text-2xl font-semibold text-slate-900 text-center">
+            Welcome To Tracker
+          </h1>
         <div className="rounded-bl-4xl relative h-48 bg-red-400">
           <svg
             className="absolute bottom-0"

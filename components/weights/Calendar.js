@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilState } from 'recoil'
 import { dateState, numberOfDaysBackState } from '../../atoms/dateAtom'
 import Header from '../ui/Header'
+import Weight from './Weight'
 const {
   startOfWeek,
   addDays,

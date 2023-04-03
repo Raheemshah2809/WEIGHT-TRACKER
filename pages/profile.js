@@ -16,15 +16,18 @@ import useUser from '../hooks/useUser'
 import ProfileDetails from '../components/profile/ProfileDetails'
 import Button from '../components/ui/Button'
 import Layout from '../components/layout'
+import { IoFlame } from 'react-icons/io5'
 
-export default function Profile() {
+function Profile() {
   const [value, setValue] = useRecoilState(dateState)
   const router = useRouter()
   const [modalOpen, setModalOpen] = useRecoilState(editProfileModalState)
 
   const { loadingUser, user } = useUser()
 
-  useEffect(async () => {
+  const [flameStreak, setFlameStreak] = useState(0); // Initialize the flame streak to 0
+
+  useEffect(() => {
     setValue(startOfDay(new Date()))
     setModalOpen(false)
   }, [])
@@ -32,6 +35,14 @@ export default function Profile() {
   const handleSignout = async () => {
     signOut(auth)
     router.push('/login')
+  }
+
+  const incrementFlameStreak = () => {
+    setFlameStreak((prevStreak) => prevStreak + 1);
+  }
+
+  const resetFlameStreak = () => {
+    setFlameStreak(0);
   }
 
   return (
@@ -72,10 +83,17 @@ export default function Profile() {
               </Button>
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center">Version 1.3</h2>
-          <h2 className="text-sm font-semibold text-center">Build: 02-04-23</h2>
+          <h2 className="text-xl font-semibold text-center">Version 1.4</h2>
+          <h2 className="text-sm font-semibold text-center">Build: 030423</h2>
+            <h1 className='text-center mt-5'> <div className="flex justify-center">
+            <IoFlame className="text-red-500" />
+          </div>Add your weight within 24 hours of the date to earn a flame</h1>
         </>
       )}
     </Layout>
   )
 }
+
+export default Profile
+
+          
