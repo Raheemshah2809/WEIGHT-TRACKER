@@ -83,7 +83,7 @@ function Profile() {
               </Button>
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center">Version 1.4</h2>
+          <h2 className="text-xl font-semibold text-center">Version 1.4.1</h2>
           <h2 className="text-sm font-semibold text-center">Build: 030423</h2>
             <h1 className='text-center mt-5'> <div className="flex justify-center">
             <IoFlame className="text-red-500" />
